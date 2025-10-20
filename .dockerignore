@@ -1,0 +1,20 @@
+# Node
+node_modules
+npm-debug.log
+yarn-error.log
+
+# Build output
+dist
+
+# Git
+.git
+.gitignore
+
+# Local envs / editor
+.env
+.vscode
+.DS_Store
+
+# Ignore Dockerfiles (optional) — but not necessary
+# Dockerfile
+# .dockerignore

@@ -1,0 +1,12 @@
+/* Reset cơ bản */
+#root {
+  @apply min-h-screen;
+  max-width: 1280px;
+  margin: 0 auto;
+  font-family: system-ui, sans-serif;
+}
+
+/* Có thể thêm utility class chung cho card */
+.card {
+  @apply bg-white rounded-2xl shadow-md p-6 transition hover:shadow-lg;
+}
