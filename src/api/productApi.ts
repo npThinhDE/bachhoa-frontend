@@ -20,9 +20,10 @@ function normalizeImages(x: any): string[] {
       .map((path: string) => {
         if (!path) return "";
         if (path.startsWith("http")) return path; // đã đủ URL
-        if (path.startsWith("/bachhoa")) return `http://localhost:8080${path}`;
-        if (path.startsWith("images/")) return `http://localhost:8080/bachhoa/${path}`;
-        return `http://localhost:8080/bachhoa/images/${path}`;
+        const apiBase = import.meta.env.VITE_API_URL || "http://localhost:8080/bachhoa";
+        if (path.startsWith("/bachhoa")) return `${apiBase.replace('/bachhoa', '')}${path}`;
+        if (path.startsWith("images/")) return `${apiBase}/${path}`;
+        return `${apiBase}/images/${path}`;
       })
       .filter(Boolean);
   }

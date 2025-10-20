@@ -7,7 +7,7 @@ import {
   clearTokens,
 } from "../utils/token";
 
-const baseURL = "http://localhost:8080/bachhoa/api";
+const baseURL = (import.meta.env.VITE_API_URL || "http://localhost:8080/bachhoa") + "/api";
 
 const axiosClient = axios.create({
   baseURL,

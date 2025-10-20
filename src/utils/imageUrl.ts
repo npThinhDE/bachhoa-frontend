@@ -2,7 +2,10 @@
  * Utility functions for handling image URLs
  */
 
-const BACKEND_BASE_URL = 'http://localhost:8080/bachhoa';
+/**
+ * Utility functions for handling image URLs
+ */
+const BACKEND_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080/bachhoa';
 
 /**
  * Convert relative image path to full URL

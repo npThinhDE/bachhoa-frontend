@@ -1,6 +1,6 @@
 // src/utils/url.ts
 export const API_BASE = (
-  import.meta.env.VITE_API_BASE_URL ?? "http://localhost:8080/bachhoa"
+  import.meta.env.VITE_API_URL ?? "http://localhost:8080/bachhoa"
 ).replace(/\/+$/, ""); // bỏ dấu / cuối
 
 const ABSOLUTE_URL = /^(?:[a-z][a-z0-9+.-]*:)?\/\//i; // http:, https:, //host

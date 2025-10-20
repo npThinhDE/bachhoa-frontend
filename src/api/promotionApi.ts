@@ -4,7 +4,7 @@ import axios from "axios";
 
 // === Instance chung ===
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_BASE_URL ?? "http://localhost:8080/bachhoa",
+  baseURL: import.meta.env.VITE_API_URL ?? "http://localhost:8080/bachhoa",
   headers: { "Content-Type": "application/json" },
 });
 
